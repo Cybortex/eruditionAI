@@ -1,12 +1,10 @@
 import React from 'react'
-import { Toggle } from './ui/toggle'
+import { ModeToggle } from './toggle'
 
 const Hero = () => {
   return (
     <div>
 
-      hello
-      <Toggle />
       
     </div>
   )
