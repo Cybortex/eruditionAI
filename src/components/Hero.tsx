@@ -4,14 +4,14 @@ import { TypewriterEffect } from './TextSmooth'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='flex'>
 
       <TypewriterEffect />
 
       <Image
         src="/App.png"
-        width={50}
-        height={50}
+        width={1500}
+        height={1500}
         alt="Picture of the author"
       />
       
