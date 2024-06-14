@@ -4,4 +4,5 @@ export const navItems = [
     { name: "Roadmap", link: "/roadmap" },
     { name: "Team", link: "/team" },
     { name: "Chatbot", link: "/chatbot" },
-  ];
+  ];``
+

@@ -1,10 +1,11 @@
 import React from 'react'
-import Waitlist from './Waitlist'
+import { TypewriterEffect } from './TextSmooth'
 
 const Hero = () => {
   return (
     <div>
 
+      <TypewriterEffect />
       
     </div>
   )

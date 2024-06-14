@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { FaHome } from "react-icons/fa";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Folorunsho Olugboji",
-  description: "Entreprenuer, Web Developer & Writer",
+  title: "Erudition",
+  description: "Learning AI",
 };
 
 export default function RootLayout({
@@ -25,10 +24,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <FloatingNav navItems={[
-              {name:"Home", link:"/",icon:<FaHome/>}
-            ]}
-             />
+            <Navbar />
             {children}
           </ThemeProvider></body>
     </html>
