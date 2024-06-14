@@ -14,14 +14,14 @@ const Footer = () => {
       </div>
       <div className='border-white flex flex-col px-4 py-10'>
         <div className='text-brand text-xl'> 
-          Erudition
+          Important links
         </div>
         <div className='text-xs w-18'>
           The Future of learning. Improving The way you learn
         </div>
       </div><div className='border-white flex flex-col px-4 py-10'>
         <div className='text-brand text-xl'> 
-          Erudition
+          Important Links
         </div>
         <div className='text-xs w-18'>
           The Future of learning. Improving The way you learn
