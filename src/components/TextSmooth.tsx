@@ -21,10 +21,10 @@ export function TypewriterEffect() {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[40rem]  ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-[50px] sm:text-base  ">
-        Need to study?
+      <p className="text-neutral-600 dark:text-neutral-200 sm:text-base uppercase">
+        study long hours but cant remember anything?
       </p>
-      <TypewriterEffectSmooth className="text-xl" words={words} />
+      <TypewriterEffectSmooth className="text-4xl" words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
       <a href="/chatbot">
         <ShimmerButton 

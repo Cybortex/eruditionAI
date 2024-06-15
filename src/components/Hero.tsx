@@ -7,8 +7,6 @@ const Hero = () => {
     <div className=''>
       
       <TypewriterEffect />
-          
-
       
       
     </div>

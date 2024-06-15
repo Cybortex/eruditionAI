@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation';
 import Image from 'next/image'
 import { navItems } from "@/data";
 import { FaBars, FaMixer} from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
 
-    const [active, setActive] = useState("");
+    const pathname = usePathname();
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -39,17 +41,13 @@ const Navbar = () => {
             />
             <nav>
             <ul className='list-none hidden sm:flex flex-row gap-10'>
-           {navItems.map((nav) => (
-            <li
-              key={nav.link}
-              className={`${
-                active === nav.name ? "text-brand" : "text-white"
-              } hover:text-brand text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.name)}
-            >
-              <a href={`${nav.link}`}>{nav.name}</a>
-            </li>
-          ))}
+           {navItems.map((nav) =>  
+           (<Link 
+            href={nav.link} 
+            key={nav.link} 
+            className={`${nav.link === pathname && "text-brand"}`}
+            >{nav.name}</Link>)
+          )}
           </ul>
 
           <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -66,20 +64,13 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='list-none flex justify-center items-start flex-1 flex-col gap-4'>
-              {navItems.map((nav) => (
-                <li
-                  key={nav.link}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.name ? "text-blue" : "text-white"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.name);
-                  }}
-                >
-                  <a href={`${nav.link}`}>{nav.name}</a>
-                </li>
-              ))}
+            {navItems.map((nav) =>  
+           (<Link 
+            href={nav.link} 
+            key={nav.link} 
+            className={`${nav.link === pathname && "text-brand"}`}
+            >{nav.name}</Link>)
+          )}
             </ul>
           </div>
                 </div>
