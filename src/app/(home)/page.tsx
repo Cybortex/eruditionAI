@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import ProjectOveriew from "@/components/ProjectOveriew";
 
 export default function Home() {
   return (
@@ -7,6 +8,8 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         
         <Hero />
+        
+        <ProjectOveriew />
         
       </div>     
       
