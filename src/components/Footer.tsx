@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='text-brand text-xl font-bold uppercase'> 
           Erudition AI
         </div>
-        <div className='text-sm w-18 pt-3'>
+        <div className='text-xs w-18 pt-3'>
           The Future of learning. Improving The way you learn
         </div>
       </div>
@@ -36,9 +36,9 @@ const Footer = () => {
         </div>
       </div><div className='flex flex-col px-4 py-10'>
         <div className='text-brand text-xl font-bold uppercase'> 
-          Important Links
+          Upcoming
         </div>
-        <div className='text-xs w-18'>
+        <div className='text-xs pt-3 w-18'>
           The Future of learning. Improving The way you learn
         </div>
       </div>

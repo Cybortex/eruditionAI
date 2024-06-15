@@ -45,7 +45,7 @@ const Navbar = () => {
            (<Link 
             href={nav.link} 
             key={nav.link} 
-            className={`${nav.link === pathname && "text-brand"}`}
+            className={`${nav.link === pathname && "text-brand border-b-2 border-brand border-w-1"} hover:text-brand`}
             >{nav.name}</Link>)
           )}
           </ul>

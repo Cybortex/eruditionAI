@@ -20,7 +20,7 @@ export function TypewriterEffect() {
     
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[40rem]  ">
+    <div className="flex flex-col items-center justify-center h-[40rem]">
       <p className="text-neutral-600 dark:text-neutral-200 sm:text-base uppercase">
         study long hours but cant remember anything?
       </p>
