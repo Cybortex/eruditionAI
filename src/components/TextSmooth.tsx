@@ -1,4 +1,6 @@
 "use client";
+import { FaBrain, FaLocationArrow } from "react-icons/fa";
+import ShimmerButton from "./ui/ShimmerButton";
 import { TypewriterEffectSmooth } from "./ui/TypeEffect";
 export function TypewriterEffect() {
   const words = [
@@ -24,12 +26,20 @@ export function TypewriterEffect() {
       </p>
       <TypewriterEffectSmooth className="text-xl" words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-bra border-transparent text-white text-[18px]">
-          Use Erudition
-        </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black text-[18px]">
-          Learn More
-        </button>
+      <a href="/chatbot">
+        <ShimmerButton 
+          title="Use Erudition"
+          icon={<FaBrain />}
+          position='left'
+        />
+      </a>
+      <a href="/about">
+        <ShimmerButton 
+          title="Learn More"
+          icon={<FaLocationArrow />}
+          position='right'
+        />
+      </a>
       </div>
     </div>
   );
