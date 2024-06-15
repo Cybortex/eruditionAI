@@ -1,3 +1,6 @@
+'use client';
+
+import { navItems } from '@/data';
 import React from 'react'
 import { FaGithub, FaTwitter, FaInstagram, FaYoutube, FaCopyright } from 'react-icons/fa'
 
@@ -9,7 +12,7 @@ const Footer = () => {
         <div className='text-brand text-xl font-bold uppercase'> 
           Erudition AI
         </div>
-        <div className='text-xs w-18'>
+        <div className='text-sm w-18 pt-3'>
           The Future of learning. Improving The way you learn
         </div>
       </div>
@@ -17,8 +20,19 @@ const Footer = () => {
         <div className='text-brand text-xl font-bold uppercase'> 
           Important links
         </div>
-        <div className='text-xs w-18'>
-          The Future of learning. Improving The way you learn
+        <div>
+
+        <ul className='list-none flex justify-center items-start flex-1 flex-col gap-2 pt-3'>
+              {navItems.map((nav) => (
+                <li
+                  key={nav.link}
+                  className={`font-poppins font-medium cursor-pointer text-[14px]`}
+                >
+                  <a href={`${nav.link}`}>{nav.name}</a>
+                </li>
+              ))}
+            </ul>
+          
         </div>
       </div><div className='flex flex-col px-4 py-10'>
         <div className='text-brand text-xl font-bold uppercase'> 
