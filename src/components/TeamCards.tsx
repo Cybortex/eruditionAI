@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 
 const TeamCards = () => {
   return (
@@ -14,7 +14,13 @@ const TeamCards = () => {
                     <p className='max-w-[500px]mb-9 text-white/80'>Ambitious young entreprnuer and writer...</p>
                 </div>
 
-                <div>photo</div>
+                <div>
+                    <Image
+                          src="/profile-image.png"
+                          width={250}
+                          height={250} alt={''}                    
+                    />
+                </div>
 
             </div>
 
