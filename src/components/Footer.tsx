@@ -6,7 +6,7 @@ import { FaGithub, FaTwitter, FaInstagram, FaYoutube, FaCopyright } from 'react-
 
 const Footer = () => {
   return (
-    <footer className='bg-black flex flex-col w-full bottom-0'>
+    <footer className='bg-black flex flex-col w-full bottom-0 fixed'>
       <div className='flex justify-between border-y border-white-100 '>
       <div className='border-white flex flex-col px-4 py-10'>
         <div className='text-brand text-xl font-bold uppercase'> 
