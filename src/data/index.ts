@@ -1,3 +1,5 @@
+import { FaBrain } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 export const navItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
@@ -7,44 +9,22 @@ export const navItems = [
   ];``
 
 export const roadmap = [
-    {
-      title: "React.js Developer",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React.js Developer",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React.js Developer",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React.js Developer",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+  {
+    index_number: 1,
+    title: "Bachelor's Degree",
+    location: "Bangladesh",
+    description:
+      "I completed my Bachelor's Degree in Computer Science and Software Engineering at the American International University-Bangladesh.",
+    tags: ["CSSE", "Bachelors", "Graduation"],
+    date: "2-September-1994",
+  },
+  {
+    index_number: 1,
+    title: "Bachelor's Degree",
+    location: "Bangladesh",
+    description:
+      "I completed my Bachelor's Degree in Computer Science and Softwarelre asjdajs.",
+    tags: ["CSSE", "Bachelors", "Graduation"],
+    date: "11-September-2021",
+  },
   ];
