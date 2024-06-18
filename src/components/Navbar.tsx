@@ -61,14 +61,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-slate-50 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl text-black`}
           >
             <ul className='list-none flex justify-center items-start flex-1 flex-col gap-4'>
             {navItems.map((nav) =>  
            (<Link 
             href={nav.link} 
             key={nav.link} 
-            className={`${nav.link === pathname && "text-brand"}`}
+            className={`${nav.link === pathname && "text-brand font-semibold w-full bg-black p-3 rounded-xl"}`}
             >{nav.name}</Link>)
           )}
             </ul>
