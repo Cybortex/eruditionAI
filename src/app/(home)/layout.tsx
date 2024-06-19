@@ -18,10 +18,6 @@ export default function RootLayout({
   return (
     <html>
       <body className={inter.className}>
-        <FloatingNav navItems={[
-              {name:"Home", link:"/",icon:<FaHome/>}
-            ]}
-         />
         {children}
      </body>
     </html>

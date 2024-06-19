@@ -1,5 +1,7 @@
 import Hero from "@/components/Hero";
 import ProjectOveriew from "@/components/ProjectOveriew";
+import RoadMap from "../../components/Roadmap";
+import TeamCards from "@/components/TeamCards";
 
 export default function Home() {
   return (
@@ -9,7 +11,11 @@ export default function Home() {
         
         <Hero />
 
-        <ProjectOveriew />
+        <ProjectOveriew  />
+
+        <RoadMap />
+
+        <TeamCards />
         
       </div>     
       
