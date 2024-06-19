@@ -2,8 +2,8 @@ import { FaBrain } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 export const navItems = [
     { name: "Home", link: "/" },
-    { name: "About", link: "#about" },
-    { name: "Roadmap", link: "#roadmap" },
+    { name: "About", link: "/#about" },
+    { name: "Roadmap", link: "/#roadmap" },
     { name: "Survey", link: "/survey" },
     { name: "Chatbot", link: "/chatbot" },
   ];``
