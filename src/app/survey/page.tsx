@@ -10,8 +10,8 @@ function SurveyPage() {
         width="640"
         height="800"
         frameBorder="0"
-        marginHeight="1"
-        marginWidth="1"
+        marginHeight={0}
+        marginWidth={0}
       >
         Loading…
       </iframe>
